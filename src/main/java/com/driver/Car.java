@@ -1,6 +1,7 @@
 package com.driver;
 
 public class Car extends Vehicle {
+
     private int wheels;
     private String type;
     private int doors;
@@ -67,17 +68,16 @@ public class Car extends Vehicle {
 
     public Car(String name, boolean isManual){
         super(name);
-        this.isManual = isManual;
+        setManual(isManual);
     }
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
         super(name);
-        this.wheels = wheels;
-        this.doors = doors;
-        this.gears = gears;
-        this.isManual = isManual;
-        this.type = type;
-        this.seats = seats;
-
+        setWheels(wheels);
+        setDoors(doors);
+        setGears(gears);
+        setManual(isManual);
+        setType(type);
+        setSeats(seats);
     }
 
     public void changeGear(int newGear){
