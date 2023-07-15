@@ -72,6 +72,7 @@ public class Car extends Vehicle {
     }
     public Car(String name, int wheels, int doors, int gears, boolean isManual, String type, int seats) {
         super(name);
+        setCurrentGear(1);
         setWheels(wheels);
         setDoors(doors);
         setGears(gears);
